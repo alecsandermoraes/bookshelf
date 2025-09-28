@@ -1,0 +1,92 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #E0E0E0;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #BB86FC;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 10px 0 20px;
+  font-size: 14px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.green { background: #4CAF50; }
+.yellow { background: #FFEB3B; }
+.blue { background: #2196F3; }
+.orange { background: #FF9800; }
+.gray { background: #9E9E9E; }
+
+form {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #1F1F1F;
+  color: #FFF;
+}
+
+form button {
+  grid-column: span 4;
+  background: #BB86FC;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #9B6AE3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1E1E1E;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #2C2C2C;
+  color: #BB86FC;
+}
+
+tbody tr:nth-child(even) {
+  background: #2A2A2A;
+}
+
+a {
+  color: #82B1FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
